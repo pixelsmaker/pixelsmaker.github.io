@@ -300,7 +300,31 @@
       
         
           
-            <script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script>
+            <script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><p>我们希望给定一个$x$,可以通过$P(y=1|x)=\pi(x)$找到其类别的概率分布情况从而进行分类，但是由于其为一个概率，所以$\pi(x)\in[0,1]$。</p>
+<p>我们希望通过$x$的线形模型$wx$这样的线性函数去刻画$\pi(x)$的特征。而$ wx\in(-\infty,+\infty)$, 我们需要找到</p>
+<script type="math/tex; mode=display">
+P(y=1|x)=\pi(x)\in[0,1]\longleftrightarrow w·x\in(-\infty,+\infty)</script><p>之间的对应关系。</p>
+<p><strong>这里用到的变化就是logit变换</strong></p>
+<script type="math/tex; mode=display">
+logit(\pi(x))=log(\dfrac{\pi(x)}{1-\pi(x)})\in(-\infty,+\infty)</script><p>所以有：</p>
+<script type="math/tex; mode=display">
+log(\dfrac{\pi(x)}{1-\pi(x)})=w·x</script><p>可以解出：</p>
+<script type="math/tex; mode=display">
+\pi(x)=\dfrac{exp(w·x)}{1+exp(w·x)}</script><p>从而推出了logistic回归模型的形式：</p>
+<script type="math/tex; mode=display">
+二项logistic回归模型:
+P(Y=1|x)=\dfrac{exp(w·x)}{1+exp(w·x)}</script><p>接下来如何求$w$?   =&gt; 模型参数估计：极大似然估计</p>
+<p>【如果$P(Y=1)|x)&gt;0.5$则判断为1，否则判定为0】</p>
+<p>对于N个样本${(x_1,y_1),(x_2,y_2),(x_3,y_3)…}$，似然函数为：</p>
+<script type="math/tex; mode=display">
+L(w)=\prod_{i=1}^N\pi(x_i)^{y_i}[1-\pi(x_i)]^{1-y_i}</script><script type="math/tex; mode=display">
+maxL(w)=>maxlnL(w)</script><p>对数似然函数为：</p>
+<script type="math/tex; mode=display">
+lnL(w)=\sum_1^N[y_ilog(\pi(x_i))+(1-y_i)log(1-\pi(x_i))]</script><p>带入$\pi(x)$的表达式有：</p>
+<script type="math/tex; mode=display">
+lnL(w)=\sum_1^N[y_i(w·x_i)-log(1+exp(w·x_i))]</script><p><strong>如何解这个式子我们采用梯度下降法，由于找的是最大值，所以需要向正梯度方向更新</strong></p>
+<p>从而找到$w$的极大似然估计值.从而找到<strong>二分类logistc回归模型</strong></p>
+
           
         
       
