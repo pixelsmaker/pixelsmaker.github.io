@@ -300,22 +300,7 @@
       
         
           
-            <h1 id="1-支持向量机SVM"><a href="#1-支持向量机SVM" class="headerlink" title="1,支持向量机SVM"></a>1,支持向量机SVM</h1><h2 id="1-1线性分类"><a href="#1-1线性分类" class="headerlink" title="1.1线性分类"></a>1.1线性分类</h2><h2 id="1-2最大间隔分类器"><a href="#1-2最大间隔分类器" class="headerlink" title="1.2最大间隔分类器"></a>1.2最大间隔分类器</h2><h2 id="1-3拉格朗日对偶问题"><a href="#1-3拉格朗日对偶问题" class="headerlink" title="1.3拉格朗日对偶问题"></a>1.3拉格朗日对偶问题</h2><p>在我们学高数的时候，都知道那个熟的不能在熟的“拉格朗日乘数法”了，但我知道，除了考研党们，大部分的人估计也忘的差不多了，现在简单回忆一下。</p>
-<p>————<em>复习拉格朗日乘数法</em>————</p>
-<p>假设我们要求f(x)的最小值，约束条件是h(x)=0，即：</p>
-<p>Min f(x)</p>
-<p>s.t hi(x)=0,i=1,2…n</p>
-<p>那么可以引入拉格朗日算子a，构造拉格朗日函数：</p>
-<p><img src="https://www.zhihu.com/equation?tex=F%28x%2Ca%29+%3D+f%28x%29+-+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7Ba%5Ccdot+h_%7Bi%7D%28x%29%7D" alt="[公式]"></p>
-<p>然后对x和a求偏导，使偏导数等于0，然后解出x和a。</p>
-<p>————<em>以上就是拉格朗日乘数法</em>————</p>
-<p>但是，这里遇到的不是那么简单的一个等式约束，而是一个不等式哦。</p>
-<p>我们仍可以通过拉格朗日函数将约束条件融合到目标函数里去，首先，仍然构造拉格朗日函数：</p>
-<p><img src="https://pic4.zhimg.com/80/v2-f6f4876894b8be629861d175fd86a963_hd.png" alt="img"></p>
-<p>然后，我们令</p>
-<p><img src="https://www.zhihu.com/equation?tex=C%28w%29%3D%5Cmax_%7Ba_%7Bi%7D%3E0%7DF%28w%2Cb%2Ca%29" alt="[公式]"></p>
-<p>为什么呢？我们将用下面的图予以说明：</p>
-
+            <h1 id="1-支持向量机SVM"><a href="#1-支持向量机SVM" class="headerlink" title="1,支持向量机SVM"></a>1,支持向量机SVM</h1>
           
         
       
