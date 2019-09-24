@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1,支持向量机SVM1.1线性分类1.2最大间隔分类器1.3拉格朗日对偶问题在我们学高数的时候，都知道那个熟的不能在熟的“拉格朗日乘数法”了，但我知道，除了考研党们，大部分的人估计也忘的差不多了，现在简单回忆一下。 ————复习拉格朗日乘数法———— 假设我们要求f(x)的最小值，约束条件是h(x)=0，即： Min f(x) s.t hi(x)=0,i=1,2…n 那么可以引入拉格朗日算子a，构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="机器学习.md">
 <meta property="og:url" content="http://yoursite.com/2019/09/24/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1,支持向量机SVM1.1线性分类1.2最大间隔分类器1.3拉格朗日对偶问题在我们学高数的时候，都知道那个熟的不能在熟的“拉格朗日乘数法”了，但我知道，除了考研党们，大部分的人估计也忘的差不多了，现在简单回忆一下。 ————复习拉格朗日乘数法———— 假设我们要求f(x)的最小值，约束条件是h(x)=0，即： Min f(x) s.t hi(x)=0,i=1,2…n 那么可以引入拉格朗日算子a，构">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-24T07:52:17.952Z">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=F%28x%2Ca%29+%3D+f%28x%29+-+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7Ba%5Ccdot+h_%7Bi%7D%28x%29%7D">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-f6f4876894b8be629861d175fd86a963_hd.png">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=C%28w%29%3D%5Cmax_%7Ba_%7Bi%7D%3E0%7DF%28w%2Cb%2Ca%29">
+<meta property="og:updated_time" content="2019-09-24T08:50:42.428Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="机器学习.md">
+<meta name="twitter:description" content="1,支持向量机SVM1.1线性分类1.2最大间隔分类器1.3拉格朗日对偶问题在我们学高数的时候，都知道那个熟的不能在熟的“拉格朗日乘数法”了，但我知道，除了考研党们，大部分的人估计也忘的差不多了，现在简单回忆一下。 ————复习拉格朗日乘数法———— 假设我们要求f(x)的最小值，约束条件是h(x)=0，即： Min f(x) s.t hi(x)=0,i=1,2…n 那么可以引入拉格朗日算子a，构">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=F%28x%2Ca%29+%3D+f%28x%29+-+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7Ba%5Ccdot+h_%7Bi%7D%28x%29%7D">
 
 
 
@@ -125,7 +129,7 @@
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>机器学习.md | Hexo</title>
   
 
 
@@ -249,7 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习.md</h1>
         
 
         <div class="post-meta">
@@ -261,7 +265,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T15:52:17+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T14:51:26+08:00">
                 2019-09-24
               </time>
             
@@ -299,19 +303,21 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="1-支持向量机SVM"><a href="#1-支持向量机SVM" class="headerlink" title="1,支持向量机SVM"></a>1,支持向量机SVM</h1><h2 id="1-1线性分类"><a href="#1-1线性分类" class="headerlink" title="1.1线性分类"></a>1.1线性分类</h2><h2 id="1-2最大间隔分类器"><a href="#1-2最大间隔分类器" class="headerlink" title="1.2最大间隔分类器"></a>1.2最大间隔分类器</h2><h2 id="1-3拉格朗日对偶问题"><a href="#1-3拉格朗日对偶问题" class="headerlink" title="1.3拉格朗日对偶问题"></a>1.3拉格朗日对偶问题</h2><p>在我们学高数的时候，都知道那个熟的不能在熟的“拉格朗日乘数法”了，但我知道，除了考研党们，大部分的人估计也忘的差不多了，现在简单回忆一下。</p>
+<p>————<em>复习拉格朗日乘数法</em>————</p>
+<p>假设我们要求f(x)的最小值，约束条件是h(x)=0，即：</p>
+<p>Min f(x)</p>
+<p>s.t hi(x)=0,i=1,2…n</p>
+<p>那么可以引入拉格朗日算子a，构造拉格朗日函数：</p>
+<p><img src="https://www.zhihu.com/equation?tex=F%28x%2Ca%29+%3D+f%28x%29+-+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7Ba%5Ccdot+h_%7Bi%7D%28x%29%7D" alt="[公式]"></p>
+<p>然后对x和a求偏导，使偏导数等于0，然后解出x和a。</p>
+<p>————<em>以上就是拉格朗日乘数法</em>————</p>
+<p>但是，这里遇到的不是那么简单的一个等式约束，而是一个不等式哦。</p>
+<p>我们仍可以通过拉格朗日函数将约束条件融合到目标函数里去，首先，仍然构造拉格朗日函数：</p>
+<p><img src="https://pic4.zhimg.com/80/v2-f6f4876894b8be629861d175fd86a963_hd.png" alt="img"></p>
+<p>然后，我们令</p>
+<p><img src="https://www.zhihu.com/equation?tex=C%28w%29%3D%5Cmax_%7Ba_%7Bi%7D%3E0%7DF%28w%2Cb%2Ca%29" alt="[公式]"></p>
+<p>为什么呢？我们将用下面的图予以说明：</p>
 
       
     </div>
@@ -442,7 +448,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-支持向量机SVM"><span class="nav-number">1.</span> <span class="nav-text">1,支持向量机SVM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1线性分类"><span class="nav-number">1.1.</span> <span class="nav-text">1.1线性分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2最大间隔分类器"><span class="nav-number">1.2.</span> <span class="nav-text">1.2最大间隔分类器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3拉格朗日对偶问题"><span class="nav-number">1.3.</span> <span class="nav-text">1.3拉格朗日对偶问题</span></a></li></ol></li></ol></div>
             
 
           </div>
